@@ -55,12 +55,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
-        "value": "https://t.me/Best_FriendsFor_Ever",
+        "value": "https://t.me/TEAM_PHYSCO_FIGHTER",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/Star_X_Network",
+        "value": "https://t.me/XD_MUSIC_BOTZ",
         "required": false
       },
       "PING_IMG_URL": {
