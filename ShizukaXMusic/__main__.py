@@ -35,7 +35,7 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("XDMUSIC.plugins" + all_module)
+        importlib.import_module("ShizukaXMusic.plugins" + all_module)
     LOGGER("ShizukaXMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Shizuka.start()
