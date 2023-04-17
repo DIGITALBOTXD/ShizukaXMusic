@@ -7,10 +7,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from XDMUSIC import LOGGER, app, userbot
-from XDMUSIC.core.call import Shizuka
-from XDMUSIC.plugins import ALL_MODULES
-from XDMUSIC.utils.database import get_banned_users, get_gbanned
+from ShizukaXMusic import LOGGER, app, userbot
+from ShizukaXMusic.core.call import Shizuka
+from ShizukaXMusic.plugins import ALL_MODULES
+from ShizukaXMusic.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -23,7 +23,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("XDMUSIC").error("Add Pyrogram string session and then try...")
+        LOGGER("ShizukaXMusic").error("Add Pyrogram string session and then try...")
     try:
         users = await get_gbanned()
         for user_id in users:
@@ -42,17 +42,17 @@ async def init():
     try:
         await Shizuka.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("XDMUSIC").error(
+        LOGGER("ShizukaXMusic").error(
             "[ERROR] - \n\nTurn on group voice chat and don't put it off otherwise I'll stop working thanks."
         )
         sys.exit()
     except:
         pass
     await Shizuka.decorators()
-    LOGGER("XDMUSIC").info("Music Bot Started Successfully")
+    LOGGER("ShizukaXMusic").info("Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("XDMUSIC").info("Stopping Music Bot")
+    LOGGER("ShizukaXMusic").info("Stopping Music Bot")
