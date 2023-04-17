@@ -1,6 +1,6 @@
 {
-    "name": "Shizuka Music Bot",
-    "description": "Shizuka Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
+    "name": "XD Music Bot",
+    "description": "XD Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://telegra.ph//file/0b8fe50483e0cda02ebb8.jpg",
     "keywords": [
     "python3",
@@ -90,7 +90,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/its-star-boi/ShizukaXMusic",
+        "value": "https://github.com/DIGITALBOTXD/ShizukaXMusic",
         "required": true
       },
       "UPSTREAM_BRANCH": {
